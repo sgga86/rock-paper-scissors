@@ -1,6 +1,4 @@
 # rock-paper-scissors
-TOP project: Rock Paper Scissors
+The Odin Project: Rock Paper Scissors
 
-
-Very simple & basic index.html + scripts.js
-Game works!
+GUI added in Jul 2023 

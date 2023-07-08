@@ -1,0 +1,161 @@
+
+body {
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+    align-items: center;
+    color:  floralwhite; 
+    font-size: 30px;
+    font-family: 'Retrolight', sans-serif;
+}
+
+.emoji {
+    display: flex;
+    font-size: 120px;
+    gap: 0px 60px;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    padding-bottom: 50px;
+}
+
+p {
+    margin-bottom: 50px;
+}
+
+#startBtn {
+    margin-top: 40px;
+    background-color: black;
+    color: floralwhite; 
+    border: 2px solid;
+    padding: 6px 24px;
+    font-family: monospace;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#startBtn:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #15f4ee, 0 0 50px #15f4ee, 0 0 60px #15f4ee, 0 0 70px #15f4ee, 0 0 80px #15f4ee;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    color: floralwhite; 
+    font-family: monospace;
+}
+
+.rpsButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background-color: black;
+    color: floralwhite; 
+    border: floralwhite; 
+    font-size: 150px;
+    padding: 20px 20px 20px 20px;
+    margin: 0px 50px;
+    border: 5px solid;
+}
+
+.hover:hover {
+    box-shadow: 0 0 5px 5px #0ff;
+}
+
+#Scissors {
+    /* font-size: 170px; */
+    padding: 20px 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: floralwhite; 
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+#move {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 36px;
+    color: hsl(0,0%,68%);
+    letter-spacing: 15px;
+}
+
+.choice {
+    display: flex;
+    color: floralwhite;
+    /* border: 2px solid floralwhite; */
+}
+
+.choice > div {
+    flex: 1 1 0;
+    /* border: 2px solid floralwhite;  */
+    margin-left: 260px;
+}
+
+.scoreboard {
+    display: flex;
+    color: floralwhite; 
+    /* border: 2px solid floralwhite;  */
+}
+
+.scoreboard > div {
+    flex: 1 1 0;
+    /* border: 2px solid floralwhite;  */
+    margin-left: 260px;
+}
+
+.round-result {
+    margin-top: 30px;
+    color: #15f4ee;
+    text-align: center;
+    font-family: 'Retrolight', sans-serif;
+    font-size: 36px;
+    white-space: pre-line;
+}
+
+.game-result {
+    margin-top: 20px;
+    font-family: 'Retro New Version', sans-serif;
+    text-align: center;
+    font-size: 56px;
+    color: #fa4789;
+}
+
+.askplayagain {
+    color:  floralwhite;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(0,0%,50%);
+}
+
+.askplayagain > button {
+    margin-top: 20px;
+    background-color: black;
+    color: floralwhite; 
+    border: 2px solid;
+    padding: 6px 24px;
+    font-family: monospace;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+}

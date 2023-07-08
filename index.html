@@ -1,4 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script src="scripts.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Let's play Rock-Paper-Scissors!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/retrolight" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/retro-new-version" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="emoji">
+            <p>✊</p>
+            <p>✋</p>
+            <p>✌️</p>
+        </div>
+        <ul>
+            <li>Let's play Rock-Paper-Scissors!</li>
+            <li>Who wins five rounds first is the winner</li>
+            <li>Are you ready to beat the computer?</li>
+            <li><button id='startBtn'>I'm ready</button></li>
+        </ul>
+    </main>
+    <div class="container">
+        <div class="rpsButtons">
+            <button class='btn hover' id='Rock'>✊</button>
+            <button class='btn hover' id='Paper'>✋</button>
+            <button class='btn hover' id='Scissors'>✌️</button>
+        </div>
+        <div id="move">Choose Your Move</div>
+        <div class="content">
+            <div class="choice"></div>
+            <div class="scoreboard"></div>
+            <div class="round-result"></div>
+            <div class="game-result"></div>
+            <div class="askplayagain"></div>
+        </div>
+    </div>
+</body>
+<script src="scripts.js"></script>
+
 </html>
