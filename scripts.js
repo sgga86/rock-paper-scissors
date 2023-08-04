@@ -82,7 +82,7 @@ function playAgain() {
 
     playAgainBtnYes.addEventListener('click', e => {
         buttons.forEach((button) => button.disabled = false,
-            comChoice.textContent = 'Computer chose:',
+            comChoice.textContent = 'PC chose:',
             yourChoice.textContent = 'You chose:',
             roundResult.textContent = '',
             comScoreboard.textContent = 'Score:',
