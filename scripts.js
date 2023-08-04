@@ -3,9 +3,11 @@ const rpsButtons = document.querySelector('.rpsButtons');
 const content = document.querySelector('.content');
 
 
-const choice = document.querySelector('.choice');
+const comChoice = document.getElementById('com-choice');
+const yourChoice = document.getElementById('your-choice');
 const roundResult = document.querySelector('.round-result');
-const scoreboard = document.querySelector('.scoreboard');
+const comScoreboard = document.getElementById('com-score');
+const yourScoreboard = document.getElementById('your-score');
 const askPlayAgain = document.querySelector('.askplayagain');
 const gameResult = document.querySelector('.game-result');
 
@@ -29,10 +31,6 @@ let resultMessage;
 let replay = document.createElement('div');
 let playAgainBtnYes = document.createElement('button');
 
-// computerScoreboard.textContent = `Computer's Score: ${computerScore}`;
-// playerScoreboard.textContent = `Player's Score: ${playerScore}`;
-// content.appendChild(computerScoreboard);
-// content.appendChild(playerScoreboard);
 
 // Main page: hide elements
 
@@ -60,10 +58,10 @@ let playerSelection =
 
 // Calculate score 
 function calculateScore() {
-    computerScoreboard.textContent = `Computer's Score: ${computerScore}`;
-    playerScoreboard.textContent = `Your Score: ${playerScore}`;
-    scoreboard.appendChild(computerScoreboard);
-    scoreboard.appendChild(playerScoreboard);
+    computerScoreboard.textContent = computerScore;
+    playerScoreboard.textContent = playerScore;
+    comScoreboard.appendChild(computerScoreboard);
+    yourScoreboard.appendChild(playerScoreboard);
 
     if (playerScore === 5 || computerScore === 5) {
         (playerScore > computerScore)
@@ -84,9 +82,11 @@ function playAgain() {
 
     playAgainBtnYes.addEventListener('click', e => {
         buttons.forEach((button) => button.disabled = false,
-            choice.textContent = '',
+            comChoice.textContent = 'Computer chose:',
+            yourChoice.textContent = 'You chose:',
             roundResult.textContent = '',
-            scoreboard.textContent = '',
+            comScoreboard.textContent = 'Score:',
+            yourScoreboard.textContent= 'Score:',
             askPlayAgain.textContent = '',
             gameResult.textContent = '',
             hover.forEach((hov) => hov.classList.add('hover')),
@@ -105,10 +105,10 @@ function showResultMessage() {
 // Add player's selection to DOM
 function addToDom() {
     console.log('addToDom Fired')
-    yourDiv.textContent = `Computer chose [${computerSelection}]`;
-    myDiv.textContent = `You chose [${playerSelection}]`;
-    choice.appendChild(yourDiv);
-    choice.appendChild(myDiv);
+    yourDiv.textContent = computerSelection;
+    myDiv.textContent = playerSelection;
+    comChoice.appendChild(yourDiv);
+    yourChoice.appendChild(myDiv);
 }
 
 // Function for computer's RPS choice
